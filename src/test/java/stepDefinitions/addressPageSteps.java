@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import pages.addressPage;
@@ -7,7 +8,7 @@ import util.driverFactory;
 
 public class addressPageSteps {
     WebDriver driver = new driverFactory().getDriver();
-    pages.addressPage addressPage = new addressPage(driver);
+    addressPage addressPage = new addressPage(driver);
 
     @When("Address title")
     public void address_title() {
@@ -43,7 +44,11 @@ public class addressPageSteps {
     }
     @When("Address save")
     public void address_save() {
-        addressPage.save();
+        addressPage.addressSave();
+    }
+    @Then("Address screen")
+    public void addressScreen() {
+     //   addressPage.addressScreen();
     }
 
 

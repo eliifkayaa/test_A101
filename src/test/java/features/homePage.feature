@@ -25,10 +25,10 @@ Feature: Home Page
     When Address quarter
     When Address information
     When Address save
+    Then Address screen
     When Choose cargo
     When Save and continue
-    Then Should see Pay
-
+    When Should see Pay
 
 
 
