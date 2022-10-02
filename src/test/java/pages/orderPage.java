@@ -26,7 +26,7 @@ public class orderPage {
     }
 
     public void seePay() {
-        //driver.findElement(seePay);
+        driver.findElement(seePay);
     }
 
 }
