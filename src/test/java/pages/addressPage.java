@@ -45,24 +45,24 @@ public class addressPage {
     }
 
     public void phone() {
-        driver.findElement(phone).sendKeys("5367051923");
+        driver.findElement(phone).sendKeys("5315096769");
     }
 
     public void city() {
       /*  Select drpCity = new Select (driver.findElement(country));
         drpCity.selectByVisibleText("İSTANBUL");
        */
-        driver.findElement(city).sendKeys("İSTANBUL");
+        driver.findElement(city).sendKeys("DENİZLİ");
     }
 
     public void country() {
-        driver.findElement(country).sendKeys("AVCILAR");
+        driver.findElement(country).sendKeys("MERKEZEFENDİ");
     }
 
     public void quarter() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(quarter));
-        driver.findElement(quarter).sendKeys("AMBARLI MAH");
+        driver.findElement(quarter).sendKeys("MEHMET AKİF MAH");
 
     }
 
@@ -76,8 +76,4 @@ public class addressPage {
         actions.moveToElement(element).click().build().perform();
     }
 
- /*   public void addressScreen() {
-        driver.findElement(screen);
-    }
-    */
 }

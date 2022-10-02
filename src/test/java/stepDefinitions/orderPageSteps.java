@@ -14,18 +14,18 @@ public class orderPageSteps {
     @When("Choose cargo")
 
     public void choose_cargo() {
-       // orderPage.cargo();
+        orderPage.cargo();
         }
 
 
     @When("Save and continue")
     public void save_and_continue() {
-        // orderPage.save_continue();
+         orderPage.save_continue();
 
     }
 
     @Then("Should see Pay")
     public void shouldSeePay() {
-      //  orderPage.seePay();
+        orderPage.seePay();
     }
 }

@@ -28,7 +28,9 @@ Feature: Home Page
     Then Address screen
     When Choose cargo
     When Save and continue
-    When Should see Pay
+    Then Should see Pay
+
+
 
 
 
